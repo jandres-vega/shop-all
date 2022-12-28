@@ -1,0 +1,23 @@
+{
+  "name": "shop-all",
+  "version": "1.0.0",
+  "description": "shop con react",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@user1:jandres-vega/shop-all.git"
+  },
+  "keywords": [
+    "react",
+    "javascript"
+  ],
+  "author": "Andres Vega <andre300.av@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
