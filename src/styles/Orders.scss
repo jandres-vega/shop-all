@@ -1,0 +1,34 @@
+@import 'vars';
+
+.Orders {
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.Orders-container {
+  text-align: center;
+  width: 80%;
+}
+.Orders-content {
+  border: 1px solid var(--cuarto);
+  border-radius: 5px;
+  padding-top: 15px;
+}
+.Orders p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.Orders p span:nth-child(1) {
+  font-size: var(--md);
+  font-weight: bold;
+}
+.Orders p span:nth-child(2) {
+  font-size: var(--sm);
+  color: var(--very-light-pink);
+}
+.Orders p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}
