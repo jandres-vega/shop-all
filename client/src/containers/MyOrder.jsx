@@ -9,9 +9,9 @@ const MyOrder = () => {
     const {state} = React.useContext(AppContext);
     const sumTotal = () => {
         const reducer = (accumalator, currentValue) => {
-            return accumalator + currentValue.price;
+            return accumalator + Number(currentValue.price);
         }
-        return state.cart.reduce(reducer, 0)
+        return state.cart.reduce(reducer, 0);
     }
     return (
         <aside className="MyOrder">

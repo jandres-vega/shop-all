@@ -3,17 +3,21 @@
 .ProductItem {
   width: 240px;
 }
+
 .ProductItem img {
   width: 240px;
   height: 240px;
   border-radius: 20px;
-  object-fit: cover;
+  //object-fit: cover;
 }
 .product-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 12px;
+}
+.container-title-card {
+  width: 100%;
 }
 .icon-card-cart {
   cursor: pointer;

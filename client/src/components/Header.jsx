@@ -6,15 +6,20 @@ import {faCartShopping, faBars} from "@fortawesome/free-solid-svg-icons";
 import {AppContext} from "../context/AppContext";
 import Menu from "./Menu";
 import MyOrder from "../containers/MyOrder";
+import {useGetCategories} from "../hooks/useGetCategories";
+
 const Header = () => {
+    const categories = useGetCategories();
 
     const [toggle, setToggle] = React.useState(false);
     const [toggleOrders, setToggleOrders] = React.useState(false);
     const {state} = React.useContext(AppContext)
 
 
-    const handleToggle = () => {
-        setToggle(!toggle);
+    const handleToggle = () =>  setToggle(!toggle);
+
+    const handleCategory = (category) => {
+        console.log(state.products)
     }
 
     return (
@@ -28,21 +33,20 @@ const Header = () => {
                         <li>
                             <a href="/">All</a>
                         </li>
-                        <li>
-                            <a href="/">Clothes</a>
-                        </li>
-                        <li>
-                            <a href="/">Electronics</a>
-                        </li>
-                        <li>
-                            <a href="/">Furnitures</a>
-                        </li>
-                        <li>
-                            <a href="/">Toys</a>
-                        </li>
-                        <li>
-                            <a href="/">Others</a>
-                        </li>
+                        {
+                            categories.map(category => (
+                                <li key={category.name_category}>
+                                    <a onClick={() => handleCategory(category.name_category)}>{category.name_category}</a>
+                                    {/*<NavLink*/}
+                                    {/*    to="/"*/}
+                                    {/*    style={({isActive}) => ({color: isActive ? 'red':'blue'})}*/}
+                                    {/*    */}
+                                    {/*>*/}
+                                    {/*    {category.name_category}*/}
+                                    {/*</NavLink>*/}
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
             </nav>

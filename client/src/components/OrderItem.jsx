@@ -12,9 +12,9 @@ const OrderItem = ({product}) => {
     return (
         <div className="OrderItem">
             <figure>
-                <img src={product.images[0]} alt="bike" />
+                <img src={product.image} alt="bike" />
             </figure>
-            <p>{product.title}</p>
+            <p>{product.name_product}</p>
             <p>{`$${product.price}`}</p>
             <FontAwesomeIcon
                 className="close-order-item"

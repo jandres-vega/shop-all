@@ -1,14 +1,13 @@
-const {Router} = require('express');
-const express = require('express');
+const {app} = require('./src/App');
+const sequelize = require('./src/libs/conexion');
+const {config} = require('./src/config/config');
 
-const app = express();
-const router = Router()
+//true = cada vez que levano el servido elimina el contenido de la base de datos
+//false = me mantiene el contenido de la base de datos sin importar si tumbo el servidor
 
-app.get('/', (req, res) =>{
-    res.send("Hola mundo");
+sequelize.sync({force: true}).then(async() => {
+    app.listen(config.port_server, async () => {
+        console.log(`listening on ${config.port_server}`)
+    })
 });
-
-app.listen(3001, async () => {
-    console.log("listening on 3000")
-})
 

@@ -14,11 +14,11 @@ const ProductItem = ({product}) => {
 
     return (
         <div className="ProductItem">
-            <img src={product.images[0]} alt={product.title} />
+            <img src={product.image} alt={product.name_product} />
             <div className="product-info">
-                <div>
+                <div className="container-title-card">
                     <p>{`$${product.price}`}</p>
-                    <p>{product.title}</p>
+                    <p>{product.name_product}</p>
                 </div>
                 <figure onClick={() => handleCart(product)} >
                     <FontAwesomeIcon className="icon-card-cart" icon={faCartShopping} />

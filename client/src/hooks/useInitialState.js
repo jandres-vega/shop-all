@@ -1,7 +1,9 @@
 import React from 'react';
+import {useGetProducts} from "./useGetProducts";
 
 const initialState = {
-    cart: []
+    cart: [],
+    products: [],
 }
 
 const useInitialState = () => {
@@ -20,10 +22,13 @@ const useInitialState = () => {
         })
     }
 
+    state.products = useGetProducts()
+
     return {
         state,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        setState
     }
 }
 

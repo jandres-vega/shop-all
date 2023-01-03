@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
 
-const API = 'https://api.escuelajs.co/api/v1/products';
+// const API = 'https://api.escuelajs.co/api/v1/products';
+const API = 'http://localhost:3000/products';
 const useGetProducts = () => {
     const [products, setProducts] = React.useState([])
 
