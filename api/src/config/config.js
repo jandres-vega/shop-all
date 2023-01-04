@@ -6,6 +6,6 @@ const config = {
     user_db: process.env.MYSQLUSER || process.env.USER_DB_LOCAL,
     password: process.env.MYSQLPASSWORD || process.env.PASSWORD_DB_LOCAL,
     name_db: process.env.MYSQLDATABASE || process.env.NAME_DB_LOCAL,
-    port_server: process.env.PORT_SERVER || 3001,
+    port_server: process.env.PORT_SERVER || 3000,
 }
 module.exports = {config}
