@@ -4,7 +4,7 @@ const useGetCategories = () => {
     const [categories, setCategories] = React.useState([]);
 
     React.useEffect( () => {
-        axios('http://localhost:3000/categories').then(res => {
+        axios('https://shop-all-production.up.railway.app/categories').then(res => {
             setCategories(res.data)
         }).catch(e => {
             console.error(e);

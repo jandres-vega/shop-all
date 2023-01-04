@@ -5,7 +5,7 @@ const {config} = require('./src/config/config');
 //true = cada vez que levano el servido elimina el contenido de la base de datos
 //false = me mantiene el contenido de la base de datos sin importar si tumbo el servidor
 
-sequelize.sync({force: true}).then(async() => {
+sequelize.sync({force: false}).then(async() => {
     app.listen(config.port_server, async () => {
         console.log(`listening on ${config.port_server}`)
     })
