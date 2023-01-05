@@ -1,6 +1,13 @@
 const {DataTypes, Model} = require('sequelize');
 
 const categoriesSchema = {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+        allowNull: true,
+        unique: true
+    },
     name_category: {
         type: DataTypes.STRING,
         allowNull: false

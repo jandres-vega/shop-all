@@ -9,5 +9,13 @@ const getAllCategories = async(req, res, next) => {
         next(e)
     }
 }
+const getCategoryById = async(req, res, next) => {
+    try {
+        const category = await categories.findCategoryById(Number(req.params.id));
+        res.status(200).send(category);
+    }catch (e) {
+        next(e)
+    }
+}
 
-module.exports = {getAllCategories}
+module.exports = {getAllCategories, getCategoryById}
