@@ -37,15 +37,16 @@ header {
   align-items: center;
   height: 60px;
 }
-.navbar-left ul li a,
-.navbar-right ul li a {
-  text-decoration: none;
+.navbar-left ul li span,
+.navbar-right ul li span {
+  //text-decoration: none;
   color: var(--very-light-pink);
   padding: 8px;
   border-radius: 8px;
+  cursor: pointer;
 }
-.navbar-left ul li a:hover,
-.navbar-right ul li a:hover {
+.navbar-left ul li span:hover,
+.navbar-right ul li span:hover {
   color: var(--black);
 }
 .container-shop {

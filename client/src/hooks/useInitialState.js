@@ -4,11 +4,12 @@ import {useGetProducts} from "./useGetProducts";
 const initialState = {
     cart: [],
     products: [],
+    copyProducts : []
 }
-
 const useInitialState = () => {
     const [state, setState] = React.useState(initialState);
 
+    useGetProducts(state, setState);
     const addToCart = (payload) => {
         setState({
             ...state,
@@ -21,13 +22,26 @@ const useInitialState = () => {
             cart: state.cart.filter(items => items.id !== payload.id)
         })
     }
-
-    state.products = useGetProducts()
+    const filterByCategory = (category) => {
+        setState({
+            ...state,
+            copyProducts: state.products = state.products
+                .filter(product => product.Category.name_category === category)
+        })
+    }
+    const getDataProducts = () => {
+        setState({
+            ...state,
+            copyProducts: state.products
+        })
+    }
 
     return {
         state,
         addToCart,
         removeFromCart,
+        filterByCategory,
+        getDataProducts,
         setState
     }
 }

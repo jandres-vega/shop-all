@@ -13,14 +13,9 @@ const Header = () => {
 
     const [toggle, setToggle] = React.useState(false);
     const [toggleOrders, setToggleOrders] = React.useState(false);
-    const {state} = React.useContext(AppContext)
-
+    const {state, filterByCategory, getDataProducts} = React.useContext(AppContext);
 
     const handleToggle = () =>  setToggle(!toggle);
-
-    const handleCategory = (category) => {
-        console.log(state.products)
-    }
 
     return (
         <header>
@@ -31,19 +26,12 @@ const Header = () => {
                 <div className="navbar-left">
                     <ul>
                         <li>
-                            <a href="/">All</a>
+                            <span onClick={() => getDataProducts()}>All</span>
                         </li>
                         {
                             categories.map(category => (
                                 <li key={category.name_category}>
-                                    <a onClick={() => handleCategory(category.name_category)}>{category.name_category}</a>
-                                    {/*<NavLink*/}
-                                    {/*    to="/"*/}
-                                    {/*    style={({isActive}) => ({color: isActive ? 'red':'blue'})}*/}
-                                    {/*    */}
-                                    {/*>*/}
-                                    {/*    {category.name_category}*/}
-                                    {/*</NavLink>*/}
+                                    <span onClick={() => filterByCategory(category.name_category)}>{category.name_category}</span>
                                 </li>
                             ))
                         }

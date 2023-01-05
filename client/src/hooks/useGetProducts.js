@@ -1,19 +1,20 @@
 import React from "react";
 import axios from "axios";
 
-// const API = 'https://api.escuelajs.co/api/v1/products';
 const API = 'http://localhost:3000/products';
-const useGetProducts = () => {
-    const [products, setProducts] = React.useState([])
+const useGetProducts = (state, setState) => {
 
     React.useEffect(() => {
         axios(API).then((res) => {
-            setProducts(res.data)
+            setState({
+                ...state,
+                products: state.products = res.data,
+                copyProducts: state.products = res.data
+            })
         }).catch(e => {
             console.error(e)
         })
     },[]);
-    return products
 }
 
 export {useGetProducts}
