@@ -7,5 +7,5 @@ const config = {
     password: process.env.MYSQLPASSWORD || process.env.PASSWORD_DB_LOCAL,
     name_db: process.env.MYSQLDATABASE || process.env.NAME_DB_LOCAL,
     port_server: process.env.PORT || 3000,
-}
-module.exports = {config}
+};
+module.exports = { config };

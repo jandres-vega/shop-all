@@ -1,14 +1,14 @@
-const {ProductServices} = require('../../../services/product.services');
+const { ProductServices } = require('../../../services/product.services');
 
 const products = new ProductServices();
-const deleteProduct = async(req, res, next) => {
+const deleteProduct = async (req, res, next) => {
     try {
-        const {id} = req.params;
+        const { id } = req.params;
         const productDelete = await products.deleteProduct(Number(id));
         res.status(200).send(productDelete);
-    }catch (e) {
-        next(e)
+    } catch (e) {
+        next(e);
     }
-}
+};
 
-module.exports = {deleteProduct}
+module.exports = { deleteProduct };

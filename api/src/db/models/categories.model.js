@@ -1,4 +1,4 @@
-const {DataTypes, Model} = require('sequelize');
+const { DataTypes, Model } = require('sequelize');
 
 const categoriesSchema = {
     id: {
@@ -6,35 +6,37 @@ const categoriesSchema = {
         primaryKey: true,
         autoIncrement: true,
         allowNull: true,
-        unique: true
+        unique: true,
     },
     name_category: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
     },
     image_category: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
     },
     description: {
-        type: DataTypes.TEXT
-    }
-}
+        type: DataTypes.TEXT,
+    },
+};
 
-class Categories extends Model{
+class Categories extends Model {
     static associated(models) {
-        this.hasMany(models.Products, {
-            onDelete: 'CASCADE', onUpdate: 'CASCADE'
-        })
+        this.hasMany(models.Products, { onDelete: 'CASCADE', onUpdate: 'CASCADE' });
+        this.hasMany(models.SubCategory, {
+            onDelete: 'CASCADE',
+            onUpdate: 'CASCADE',
+        });
     }
     static config(sequelize) {
         return {
-            sequelize
-        }
+            sequelize,
+        };
     }
 }
 
 module.exports = {
     Categories,
-    categoriesSchema
-}
+    categoriesSchema,
+};

@@ -1,4 +1,4 @@
-const {models} = require('../libs/conexion');
+const { models } = require('../libs/conexion');
 const boom = require('@hapi/boom');
 class ProductServices {
     async findAllProducts() {
@@ -6,55 +6,57 @@ class ProductServices {
             include: [
                 {
                     model: models.Categories,
-                    attributes:['name_category', 'image_category']
-                }
-            ]
+                    attributes: ['name_category', 'image_category'],
+                },
+            ],
         });
     }
     async findProductById(id) {
         const product = await models.Products.findOne({
-            where: {id: id},
+            where: { id: id },
             include: [
                 {
                     model: models.Categories,
-                    attributes: ['id', 'name_category', 'image_category', 'description']
-                }
-            ]
+                    attributes: ['id', 'name_category', 'image_category', 'description'],
+                },
+            ],
         });
-        if (!product){
+        if (!product) {
             throw new boom.notFound('product not found');
-        }else {
-            return product
+        } else {
+            return product;
         }
     }
     async createProduct(body) {
-        const {name_product, image} = body;
+        const { name_product, image } = body;
         const getProducts = await this.findAllProducts();
 
-        const productRepeat = getProducts.find(product =>
-            product.name_product === name_product || product.image === image);
-        if (productRepeat){
+        const productRepeat = getProducts.find(
+            (product) =>
+                product.name_product === name_product || product.image === image,
+        );
+        if (productRepeat) {
             return 'El producto se encuentra repetido';
-        }else {
+        } else {
             return models.Products.create(body);
         }
     }
-    async deleteProduct (id) {
+    async deleteProduct(id) {
         const product = await this.findProductById(id);
-        if (!product){
-            throw new boom.notFound("product not found")
-        }else {
-            return await product.destroy()
+        if (!product) {
+            throw new boom.notFound('product not found');
+        } else {
+            return await product.destroy();
         }
     }
-    async updateProduct (id, body) {
+    async updateProduct(id, body) {
         const product = await this.findProductById(id);
-        if (!product){
-            throw new boom.notFound("product not found");
-        }else {
+        if (!product) {
+            throw new boom.notFound('product not found');
+        } else {
             return await product.update(body);
         }
     }
 }
 
-module.exports = {ProductServices}
+module.exports = { ProductServices };
