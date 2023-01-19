@@ -1,37 +1,37 @@
 @import 'vars';
 .menu-head {
-  width: 120px;
-  height: auto;
-  border: 1px solid var(--very-light-pink);
-  border-radius: 6px;
-  padding: 20px 20px 0 20px;
-  position: absolute;
-  top: 80px;
-  right: 130px;
+   width: 120px;
+   height: auto;
+   border: 1px solid var(--very-light-pink);
+   border-radius: 6px;
+   padding: 20px 20px 0 20px;
+   position: absolute;
+   top: 80px;
+   right: 130px;
 }
 .menu-head ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+   list-style: none;
+   padding: 0;
+   margin: 0;
 }
 .menu-head ul li {
-  text-align: start;
+   text-align: start;
 }
 .menu-head ul li:nth-child(1),
 .menu-head ul li:nth-child(2) {
-  font-weight: bold;
+   font-weight: bold;
 }
 .menu-headul li:last-child {
-  padding-top: 20px;
-  border-top: 1px solid var(--very-light-pink);
+   padding-top: 20px;
+   border-top: 1px solid var(--very-light-pink);
 }
 .menu-head ul li:last-child a {
-  color: var(--black);
-  font-size: var(--md);
+   color: var(--black);
+   font-size: var(--md);
 }
 .menu-head ul li a {
-  color: var(--black);
-  text-decoration: none;
-  margin-bottom: 20px;
-  display: inline-block;
+   color: var(--black);
+   text-decoration: none;
+   margin-bottom: 20px;
+   display: inline-block;
 }

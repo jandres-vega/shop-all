@@ -1,23 +1,31 @@
 const { models } = require('../libs/conexion');
+const { SubCategoriesServices } = require('./subCategories.services');
 const boom = require('@hapi/boom');
+
+const categories = new SubCategoriesServices();
+
 class ProductServices {
     async findAllProducts() {
         return await models.Products.findAll({
             include: [
                 {
-                    model: models.Categories,
-                    attributes: ['name_category', 'image_category'],
+                    model: models.SubCategory,
+                    attributes: ['id', 'name_subcategory', 'image_subCategory'],
                 },
             ],
         });
     }
+
     async findProductById(id) {
+        if (!id) {
+            throw new boom.badRequest('Requiere de un id');
+        }
         const product = await models.Products.findOne({
             where: { id: id },
             include: [
                 {
-                    model: models.Categories,
-                    attributes: ['id', 'name_category', 'image_category', 'description'],
+                    model: models.SubCategory,
+                    attributes: ['id', 'name_subcategory', 'image_subCategory'],
                 },
             ],
         });
@@ -27,8 +35,10 @@ class ProductServices {
             return product;
         }
     }
+
     async createProduct(body) {
-        const { name_product, image } = body;
+        const { name_product, image, SubCategoryId } = body;
+
         const getProducts = await this.findAllProducts();
 
         const productRepeat = getProducts.find(
@@ -38,9 +48,16 @@ class ProductServices {
         if (productRepeat) {
             return 'El producto se encuentra repetido';
         } else {
-            return models.Products.create(body);
+            const category = await categories.findSubCategoryById(
+                Number(SubCategoryId),
+            );
+            if (!category) throw new boom.notFound();
+            else {
+                return models.Products.create(body);
+            }
         }
     }
+
     async deleteProduct(id) {
         const product = await this.findProductById(id);
         if (!product) {
@@ -49,6 +66,7 @@ class ProductServices {
             return await product.destroy();
         }
     }
+
     async updateProduct(id, body) {
         const product = await this.findProductById(id);
         if (!product) {

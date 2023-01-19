@@ -1,20 +1,31 @@
 import React from 'react';
+import '../styles/ProductInfo.scss';
+import { AppContext } from '../context/AppContext';
 
-const ProductInfo = () => {
-    return (
-        <>
-            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
-            <div className="ProductInfo">
-                <p>$35,00</p>
-                <p>Bike</p>
-                <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-                <button className="primary-button add-to-cart-button">
-                    <img src="./icons/bt_add_to_cart.svg" alt="add to cart" />
-                    Add to cart
-                </button>
-            </div>
-        </>
-    );
-};
+function ProductInfo({ id }) {
+   const { state, handleDetailProduct } = React.useContext(AppContext);
+   const { productDetail } = state;
+   React.useEffect(() => {
+      handleDetailProduct(id).catch((err) => {
+         console.log(err.statusCode);
+      });
+   }, []);
+
+   return (
+      <>
+         <div className="product-img-detail">
+            <img src={productDetail.image} alt="bike" />
+         </div>
+         <div className="ProductInfo">
+            <p>{`$${productDetail.price}`}</p>
+            <p>{productDetail.name_product}</p>
+            <p>{productDetail.description}</p>
+            <button className="primary-button add-to-cart-button">
+               Add to cart
+            </button>
+         </div>
+      </>
+   );
+}
 
 export default ProductInfo;

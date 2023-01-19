@@ -7,7 +7,7 @@ const createProduct = joi.object({
     stock: joi.number().integer(),
     price: joi.number().precision(3).required(),
     freeShopping: joi.boolean(),
-    CategoryId: joi.number().required(),
+    SubCategoryId: joi.number().required(),
 });
 
 module.exports = { createProduct };

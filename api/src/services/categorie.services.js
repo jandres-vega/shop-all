@@ -11,6 +11,7 @@ class CategoriesServices {
             ],
         });
     }
+
     async createCategory(body) {
         const { name_category } = body;
         const allCategories = await this.findAllCategories();
@@ -28,9 +29,6 @@ class CategoriesServices {
         const category = await models.Categories.findByPk(id, {
             include: [
                 {
-                    model: models.Products,
-                },
-                {
                     model: models.SubCategory,
                     attributes: ['id', 'name_subcategory', 'image_subCategory'],
                 },
@@ -39,6 +37,7 @@ class CategoriesServices {
         if (!category) throw new boom.notFound('category not found');
         else return category;
     }
+
     async deleteCategoryById(id) {
         const category = await this.findCategoryById(id);
         if (!category) throw new boom.notFound('category not found');
@@ -46,9 +45,9 @@ class CategoriesServices {
             return await category.destroy();
         }
     }
+
     async updateCategoryById(id, body) {
         const category = await this.findCategoryById(id);
-        console.log(category);
         if (!category) {
             throw new boom.notFound('category not found');
         } else {

@@ -23,12 +23,13 @@ const categoriesSchema = {
 
 class Categories extends Model {
     static associated(models) {
-        this.hasMany(models.Products, { onDelete: 'CASCADE', onUpdate: 'CASCADE' });
+        // this.hasMany(models.Products, { onDelete: 'CASCADE', onUpdate: 'CASCADE' });
         this.hasMany(models.SubCategory, {
             onDelete: 'CASCADE',
             onUpdate: 'CASCADE',
         });
     }
+
     static config(sequelize) {
         return {
             sequelize,

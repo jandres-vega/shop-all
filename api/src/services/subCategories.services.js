@@ -1,5 +1,8 @@
 const { models } = require('../libs/conexion');
+const { CategoriesServices } = require('./categorie.services');
 const boom = require('@hapi/boom');
+
+const categories = new CategoriesServices();
 
 class SubCategoriesServices {
     async findAllSubCategories() {
@@ -17,7 +20,7 @@ class SubCategoriesServices {
         if (subCategory) {
             return 'La subcategoria ya se encuentra registrada';
         } else {
-            const category = await models.Categories.findByPk(Number(CategoryId));
+            const category = await categories.findCategoryById(Number(CategoryId));
             if (!category) {
                 throw new boom.notFound(
                     `La categoria con el ID ${CategoryId} no fue encontrada`,
@@ -33,7 +36,7 @@ class SubCategoriesServices {
             where: { id: id },
             include: [
                 {
-                    model: models.Categories,
+                    model: models.Products,
                 },
             ],
         });

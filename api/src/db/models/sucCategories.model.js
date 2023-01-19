@@ -13,11 +13,16 @@ const subCategoriesSchema = {
 
 class SubCategory extends Model {
     static association(models) {
+        this.hasMany(models.Products, {
+            onDelete: 'CASCADE',
+            onUpdate: 'CASCADE',
+        });
         this.belongsTo(models.Categories, {
             onDelete: 'CASCADE',
             onUpdate: 'CASCADE',
         });
     }
+
     static config(sequelize) {
         return {
             sequelize,

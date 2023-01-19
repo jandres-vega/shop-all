@@ -1,0 +1,21 @@
+.container-paginado {
+   display: flex;
+   justify-content: center;
+   height: 70px;
+}
+
+.container-paginado li {
+   display: inline-block;
+   width: 35px;
+   height: 35px;
+   text-align: center;
+   background-color: var(--very-light-pink);
+   margin: 10px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.container-paginado span {
+   position: relative;
+   top: 7px;
+}

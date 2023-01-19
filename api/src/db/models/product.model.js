@@ -29,11 +29,12 @@ const productSchema = {
 
 class Products extends Model {
     static associated(models) {
-        this.belongsTo(models.Categories, {
+        this.belongsTo(models.SubCategory, {
             onDelete: 'CASCADE',
             onUpdate: 'CASCADE',
         });
     }
+
     static config(sequelize) {
         return {
             sequelize,
