@@ -1,0 +1,339 @@
+[
+	{
+		"name_product":"3 Camisetas Básicas Para Hombre 100% En Algodón Suavizado",
+		"description":"Inflammatory liver disease, unspecified",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675205/Ropa/3_Camisetas_B%C3%A1sicas_Para_Hombre_100_En_Algod%C3%B3n_Suavizado_murbg3.webp",
+		"stock":5,
+		"price":1.55,
+		"freeShopping":false,
+		"SubCategoryId":5
+	},
+	{
+		"name_product":"Tenis De Running Ua Charged Vantage 2 Para Hombre Blanco 302",
+		"description":"Displaced avulsion fracture of right ischium, subsequent encounter for fracture with routine healing",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675205/Ropa/Tenis_De_Running_Ua_Charged_Vantage_2_Para_Hombre_Blanco_302_wm2tcf.webp",
+		"stock":3,
+		"price":5.25,
+		"freeShopping":true,
+		"SubCategoryId":1
+	},
+	{
+		"name_product":"Tenis Hombre Tellenzi F1986 Calzado Nacional eqeoav",
+		"description":"Displaced avulsion fracture of right ischium, subsequent encounter for fracture with routine healing",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675205/Ropa/Tenis_Hombre_Tellenzi_F1986_Calzado_Nacional_eqeoav.webp",
+		"stock":10,
+		"price":6.65,
+		"freeShopping":true,
+		"SubCategoryId":1
+	},
+	{
+		"name_product":"Jeans Unisex Bebe Mfc g2ch0u",
+		"description":"Laceration without foreign body of larynx",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675205/Ropa/Jeans_Unisex_Bebe_Mfc_g2ch0u.webp",
+		"stock":7,
+		"price":7.5,
+		"freeShopping":true,
+		"SubCategoryId":4
+	},
+	{
+		"name_product":"Tenis Golty Active Track tbc1hk",
+		"description":"Nondisplaced unspecified fracture of right great toe",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675205/Ropa/Tenis_Golty_Active_Track_tbc1hk.webp",
+		"stock":12,
+		"price":10.56,
+		"freeShopping":false,
+		"SubCategoryId":1
+	},
+	{
+		"name_product":"Pack X3 Camisetas Deportivas_Originales Ripple p12jdx",
+		"description":"Unspecified fracture of shaft of right femur, subsequent encounter for open fracture type I or II with nonunion",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675205/Ropa/Pack_X3_Camisetas_Deportivas_Originales_Ripple_p12jdx.webp",
+		"stock":4,
+		"price":3.12,
+		"freeShopping":true,
+		"SubCategoryId":5
+	},
+	{
+		"name_product":"Jean Skinny Lec Lee Para Mujer",
+		"description":"Nondisplaced fracture of trapezoid [smaller multangular], left wrist",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675205/Ropa/Jean_Skinny_Lec_Lee_Para_Mujer_-_%C3%8Dndigo_Medio_wnsntu.webp",
+		"stock":6,
+		"price":8.15,
+		"freeShopping":true,
+		"SubCategoryId":4
+	},
+	{
+		"name_product":"Camisa Guns Roses",
+		"description":"Other intraarticular fracture of lower end of unspecified radius, initial encounter for closed fracture",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675204/Ropa/Camisa_Guns-Roses_iys40w.webp",
+		"stock":11,
+		"price":9.35,
+		"freeShopping":false,
+		"SubCategoryId":5
+	},
+	{
+		"name_product":"Chaqueta Deportiva Hombre_Zoom",
+		"description":"Other displaced fracture of base of first metacarpal bone, left hand, subsequent encounter for fracture with malunion",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675204/Ropa/Chaqueta_Deportiva_Hombre_Zoom_ict9eg.webp",
+		"stock":5,
+		"price":112.40,
+		"freeShopping":false,
+		"SubCategoryId":2
+	},
+	{
+		"name_product":"Jean Azul Indigo Lec Lee",
+		"description":"Nondisplaced bimalleolar fracture of left lower leg, sequela",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675204/Ropa/Jean_Azul_Indigo_Lec_Lee_olkyys.webp",
+		"stock":2,
+		"price":115.40,
+		"freeShopping":true,
+		"SubCategoryId":4
+	},
+	{
+		
+		"name_product":"Chaqueta Para Mujer Powens",
+		"description":"Galeazzi's fracture of left radius, subsequent encounter for open fracture type I or II with routine healing",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672675204/Ropa/Chaqueta_Para_Mujer_Powens_w65bkx.webp",
+		"stock":3,
+		"price":4.40,
+		"freeShopping":true,
+		"SubCategoryId":2
+	},
+	{
+		"name_product":"Kurdene AC US500",
+		"description":"El formato perfecto para ti al ser in-ear, mejoran la calidad del audio y son de tamaño pequeño.",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1664491274/ecommerce_tecnology/Productos/Aud%C3%ADfonos%20inal%C3%A1mbricos/Kurdene_AC_US500_v3tbrv.svg",
+		"stock":8,
+		"price":85.40,
+		"freeShopping":true,
+		"SubCategoryId":8
+	},
+	{
+		"name_product":"Parlante Logitech-2.1",
+		"description":"ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. ",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1664491030/ecommerce_tecnology/Productos/Parlantes/Parlante_Logitech-2.1-Z_rjsa0q.svg",
+		"stock":5,
+		"price":385.40,
+		"freeShopping":true,
+		"SubCategoryId":10
+	},
+	{
+		"name_product":"Cargador original iphone",
+		"description":"Utiliza tu dispositivo en todo momento y lugar, asegurando una carga eficaz y segura con el cargador Apple A1720.",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1664491251/ecommerce_tecnology/Productos/Cargadores%20para%20celular/Cargador_original_iphone_pbrspg.svg",
+		"stock":20,
+		"price":100.40,
+		"freeShopping":false,
+		"SubCategoryId":8
+	},
+	{
+		"name_product":"Morral para portatil 15.6-HP",
+		"description":"Impermeable permitiendo que camines bajo la lluvia sabiendo que nos pertenencias están a salvo dentro de la mochila.",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1664491133/ecommerce_tecnology/Productos/Morrales/Morral_para_portatil_15.6-HP_jr6x45.svg",
+		"stock":6,
+		"price":135.23,
+		"freeShopping":false,
+		"SubCategoryId":3
+	},
+	{
+		"name_product":"Diadema unitec dc2021",
+		"description":" marca de renombre mundial en el mercado de audio, es desde hace más 70 años una referente por la alta calidad de sus productos.",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1664491101/ecommerce_tecnology/Productos/Diademas/Diadema_unitec-dc2021_zmadz6.svg",
+		"stock":13,
+		"price":38.12,
+		"freeShopping":true,
+		"SubCategoryId":10
+	},
+	{
+		"name_product":"Mountain bike Roadmaster Wind R29 24v",
+		"description":"Marco RoadMaster Hurricane 29 Acero Inoxidable, con pintura YS CodeTenedor: Acero RoadMaster 28.6 * 25.4*",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672934339/Deportes%20y%20Fitness/Mountain_bike_Roadmaster_Wind_R29_24v_zqhu32.webp",
+		"stock":4,
+		"price":658.92,
+		"freeShopping":true,
+		"SubCategoryId":13
+	},
+	{
+		"name_product":"Kit De_Pesas Ejercicio Mancuernas Juego De Pesas",
+		"description":"Ahora realizar tu rutina de ejercicio será más fácil, ya que cuentas con uno de los mejores set de mancuernas calidad/precio.",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672934339/Deportes%20y%20Fitness/Kit_De_Pesas_Ejercicio_Mancuernas_Juego_De_Pesas_lmxsvp.webp",
+		"stock":2,
+		"price":128.15,
+		"freeShopping":false,
+		"SubCategoryId":14
+	},
+	{
+		"name_product":"Guayos Torrentin Con Taches",
+		"description":" Zapatilla-guayo para cancha sintética elaborado en material sintético de larga duración , diseño con estampados geométricos",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672934339/Deportes%20y%20Fitness/Guayos_Torret%C3%ADn_Con_Taches_qfmrp7.webp",
+		"stock":7,
+		"price":90.12,
+		"freeShopping":true,
+		"SubCategoryId":12
+	},
+	{
+		"name_product":"Colchon ortopedico extra spring ",
+		"description":"Construido con espuma de poliuretano, el colchón tiene una larga y duradera vida.",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1662062399/ecommerce-colchones-ava/Colchones/5_jcuuyg.png",
+		"stock":2,
+		"price":490.12,
+		"freeShopping":false,
+		"SubCategoryId":6
+	},
+	{
+		"name_product":"Sofa sencillo sprint duratex",
+		"description":"Fabricado en espuma rígida, cómodo y apropiado para espacios medios.Este cómodo mueble es perfecto para ubicar en habitaciones de huéspedes",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1662066689/ecommerce-colchones-ava/Muebles/9_nqedtx.png",
+		"stock":4,
+		"price":220.2,
+		"freeShopping":false,
+		"SubCategoryId":7
+	},
+	{
+		"name_product":"Mueble para sala x3",
+		"description":"mesa de centro, mesa auxiliar, mueble de sala, diseñada para hogares minimalistas, diseño sencillo y elegante.",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1662066689/ecommerce-colchones-ava/Muebles/10_jioqti.png",
+		"stock":1,
+		"price":180.92,
+		"freeShopping":true,
+		"SubCategoryId":7
+	},
+	{
+		"name_product":"Pinza amperimetrica digital Uni-T UT200A 200A",
+		"description":"es una de las marcas de multímetros digitales y pinzas amperimétricas con fuerte presencia internacional. Produce y distribuye a más de 100 países",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672935322/Contruccion/Pinza_amperim%C3%A9trica_digital_Uni-T_UT200A_200A_anjwth.webp",
+		"stock":4,
+		"price":140.22,
+		"freeShopping":true,
+		"SubCategoryId":15
+	},
+	{
+		"name_product":"Llave Push Orinal Metalica Ahorradora De Agua",
+		"description":"Es un producto altamente economizador de agua, de gran calidad y resistencia, ideal para instalar en diversos lugares, producto de calidad y garantía.",
+		"image":"https://res.cloudinary.com/cloudmulti/image/upload/v1672935322/Contruccion/Llave_Push_Orinal_Met%C3%A1lica_Ahorradora_De_Agua_oig8u0.webp",
+		"stock":3,
+		"price":80.92,
+		"freeShopping":false,
+		"SubCategoryId":16
+	}
+]
+
+
+
+
+[
+	{
+		"name_category": "Moda",
+		"image_category": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0MABRAXCIaxxsAubN3KVSmR9BnQeAeBnmMg&usqp=CAU"
+	}
+	{	
+		"name_category": "Tecnologia",
+		"image_category": "https://conceptodefinicion.de/wp-content/uploads/2021/01/tecnologia-.jpg"
+	}
+	{
+		"name_category": "Deportes y Fitness",
+		"image_category": "https://media.revistagq.com/photos/5ca5f44b7bf4c0f114a4243c/16:9/w_1280,c_limit/rutina_deporte_perfecto_4762.jpg"
+	}
+	{
+		"name_category": "Hogar y Muebles",
+		"image_category": "https://media.admagazine.com/photos/618a668ab94700461d6213eb/master/w_1600%2Cc_limit/68287.jpg"
+	}
+	{
+		"name_category": "Construccion",
+		"image_category": "https://blog.bulldozair.com/wp-content/uploads/sites/2/2020/09/all-participants-in-construction-project-1200x750.jpg"
+	}
+]
+
+[
+
+	{
+		"name_subcategory": "Calzado",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673127119/subCategories/Calzado_zmbfwq.png",
+		"CategoryId": 1
+	}
+	{
+		"name_subcategory": "Chaquetas y Abrigos",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673126257/subCategories/Chaquetas_y_abrigos_yqrrc4.webp",
+		"CategoryId": 1
+	}
+	{
+		"name_subcategory": "Bolsos y Maletas",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673127120/subCategories/Maletas_y_Bolsos_ty1k3w.png",
+		"CategoryId": 1
+	}
+	{
+		"name_subcategory": "Pantalones",
+		"image_subCategory" "https://res.cloudinary.com/cloudmulti/image/upload/v1673127120/subCategories/Pantalones_s8luhd.png",
+		"CategoryId": 1
+	}
+	{
+		"name_subcategory": "Camisetas",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673127120/subCategories/Camisas_czxcll.png",
+		"CategoryId": 1
+	}
+	
+	
+	{
+		"name_subcategory": "Dormitorios",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673126140/subCategories/Dormitorios_vqfokv.webp",
+		"CategoryId": 4
+	}
+	{
+		"name_subcategory": "Sala y Comedor",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673126095/subCategories/Sala_y_Comedor_r6y68d.webp",
+		"CategoryId": 4
+	}
+		
+	
+	{
+		"name_subcategory": "Celulares",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673127119/subCategories/Celulares_ezrn3j.png",
+		"CategoryId": 2
+	}
+	{
+		"name_subcategory": "Camaras y Accesorios",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673125872/subCategories/Camaras_y_Accesosrios_tk6uqu.webp",
+		"CategoryId": 2
+	}
+	{
+		"name_subcategory": "Computacion",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673125962/subCategories/Computacion_rg8gqf.webp",
+		"CategoryId": 2
+	}
+	{
+		"name_subcategory": "Consolas y Videojuegos",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673127119/subCategories/Consola_de_videojuegos_mtlknh.png",
+		"CategoryId": 2
+	}
+	
+	
+	{
+		"name_subcategory": "Guayos",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673126182/subCategories/Guayos_i8jxbh.webp",
+		"CategoryId": 3
+	}
+	{
+		"name_subcategory": "Bicicletas",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673126422/subCategories/Bicicletas_kqqgkr.webp",
+		"CategoryId": 3
+	}
+	{
+		"name_subcategory": "Cardio y Pesas",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673125838/subCategories/Cardio_y_pesas_tqet7p.webp",
+		"CategoryId": 3
+	
+	}
+	
+	
+	{
+		"name_subcategory": "Accesorios de Construccion",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673126213/subCategories/Accesorios_de_construccion_khfw6t.webp",
+		"CategoryId": 5
+	}
+	{
+		"name_subcategory": "Plomeria",
+		"image_subCategory": "https://res.cloudinary.com/cloudmulti/image/upload/v1673127120/subCategories/plomeria_yathf0.png",
+		"CategoryId": 5
+	}
+]
+
